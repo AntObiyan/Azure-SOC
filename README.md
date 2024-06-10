@@ -27,9 +27,9 @@ The architecture of the mini honeynet in Azure consists of the following compone
 - Azure Storage Account
 - Microsoft Sentinel
 
-For the "BEFORE" metrics, all resources were originally deployed, exposed to the internet. The Virtual Machines had both their Network Security Groups and built-in firewalls wide open, and all other resources are deployed with public endpoints visible to the Internet; aka, no use for Private Endpoints.
+In the initial "BEFORE" metrics phase, all resources were set up with internet exposure. The Virtual Machines had open Network Security Groups and built-in firewalls, while other resources had public endpoints accessible from the internet, eliminating the necessity for Private Endpoints.
 
-For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL traffic with the exception of my admin workstation, and all other resources were protected by their built-in firewalls as well as Private Endpoint
+During the subsequent "AFTER" metrics phase, Network Security Groups were fortified by blocking ALL traffic except for my admin workstation. Furthermore, all other resources were shielded by their built-in firewalls, and Private Endpoints were implemented for additional security.
 
 ## Attack Maps Before Hardening / Security Controls
 ![NSG Allowed Inbound Malicious Flows](https://i.imgur.com/1qvswSX.png)<br>
@@ -70,6 +70,6 @@ Stop Time	2023-03-19 15:37
 
 ## Conclusion
 
-In this project, a mini honeynet was constructed in Microsoft Azure and log sources were integrated into a Log Analytics workspace. Microsoft Sentinel was employed to trigger alerts and create incidents based on the ingested logs. Additionally, metrics were measured in the insecure environment before security controls were applied, and then again after implementing security measures. It is noteworthy that the number of security events and incidents were drastically reduced after the security controls were applied, demonstrating their effectiveness.
+In this project, a small-scale honeynet was built in Microsoft Azure, and log sources were integrated into a Log Analytics workspace. Microsoft Sentinel was used to initiate alerts and incidents based on the logs collected. Security metrics were initially measured in the unsecured environment before implementing security controls, and then again after their implementation. Notably, the number of security events and incidents significantly decreased after the security controls were applied, indicating their effectiveness.
 
-It is worth noting that if the resources within the network were heavily utilized by regular users, it is likely that more security events and alerts may have been generated within the 24-hour period following the implementation of the security controls.
+It's important to mention that if the network resources were heavily utilized by regular users, there might have been more security events and alerts generated within the 24-hour period following the implementation of security controls
