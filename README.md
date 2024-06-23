@@ -1,5 +1,7 @@
 # Building a SOC + Honeynet in Azure (Live Traffic)
-![Cloud Honeynet / SOC](https://i.imgur.com/ZWxe03e.jpg) 
+![Cloud Honeynet / SOC](https://github.com/AntObiyan/Azure-SOC/blob/main/Azure%20Project%20Logo.png?raw=true)
+
+
 
 ## Introduction
 
@@ -12,9 +14,13 @@ In this project, I constructed a miniature honeynet in Azure and integrated log 
 - AzureNetworkAnalytics_CL (Malicious Flows allowed into our honeynet)
 
 ## Architecture Before Hardening / Security Controls
+Before hardening, all resources were publicly accessible on the internet, and the Network Security Group firewalls were completely open
+
 ![Architecture Diagram](https://i.imgur.com/aBDwnKb.jpg)
 
 ## Architecture After Hardening / Security Controls
+After hardening, the VMs had their exposed ports (RDP/SSH) closed, and all resources were protected by firewalls and a V-Net with its own NSG. Firewall rules were established to permit access exclusively from my workstation PC to the resources in the environment
+
 ![Architecture Diagram](https://i.imgur.com/YQNa9Pp.jpg)
 
 The architecture of the mini honeynet in Azure consists of the following components:
