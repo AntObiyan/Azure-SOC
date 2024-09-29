@@ -50,11 +50,11 @@ Stop Time 2024-05-29 11:46:04
 
 | Metric                   | Count
 | ------------------------ | -----
-| SecurityEvent            | 21088
-| Syslog                   | 6970
-| SecurityAlert            | 3
-| SecurityIncident         | 278
-| AzureNetworkAnalytics_CL | 2577
+| SecurityEvent            | 102600
+| Syslog                   | 8714
+| SecurityAlert            | 31
+| SecurityIncident         | 321
+| AzureNetworkAnalytics_CL | 2463
 
 ## Attack Maps Before Hardening / Security Controls
 
@@ -69,10 +69,10 @@ Stop Time	2024-05-31 02:56:48
 | Metric                   | Count
 | ------------------------ | -----
 | SecurityEvent            | 0
-| Syslog                   | 12
-| SecurityAlert            | 0
+| Syslog                   | 0
+| SecurityAlert            | 1
 | SecurityIncident         | 0
-| AzureNetworkAnalytics_CL | 37
+| AzureNetworkAnalytics_CL | 0
 
 ## Conclusion
 
