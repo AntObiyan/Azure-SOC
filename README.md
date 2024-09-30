@@ -45,8 +45,8 @@ During the subsequent "AFTER" metrics phase, Network Security Groups were fortif
 ## Metrics Before Hardening / Security Controls
 
 The following table shows the metrics we measured in our insecure environment for 24 hours:
-Start Time 2024-05-28 11:46:04
-Stop Time 2024-05-29 11:46:04
+Start Time 6/22/2024, 2:09:10.621 PM
+Stop Time 6/23/2024, 2:09:10.621 PM
 
 | Metric                   | Count
 | ------------------------ | -----
@@ -63,8 +63,8 @@ Stop Time 2024-05-29 11:46:04
 ## Metrics After Hardening / Security Controls
 
 The following table shows the metrics we measured in our environment for another 24 hours, but after we have applied security controls:
-Start Time 2024-05-30 02:56:48
-Stop Time	2024-05-31 02:56:48
+Start Time 6/24/2024, 3:53:21.224 PM
+Stop Time	6/25/2024, 3:53:21.224 PM
 
 | Metric                   | Count
 | ------------------------ | -----
